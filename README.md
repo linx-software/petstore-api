@@ -1,18 +1,21 @@
 # PetStore integration
 
 ## Description
-This sample implement 'Petstore' API according to the example 'Petstore' Swagger definition: https://editor.swagger.io/#  Due to limitations in RESTHost fron Linx, we've not implemented the securitySchemes/oauth. 
+This sample implement 'Petstore' API according to the example 'Petstore' Swagger definition: https://editor.swagger.io/#.  We've not icluded the securitySchemes/oauth. 
 
 ## Installation
 For this sample, the api key **special-key** is used to test the authorization filters. 
 
-
 ## Usage
-Some exceptions and limitations:
+***Configure Postman collection:*** 
+1. Open Postman and import the provided request collection in Postman.
+2. The sample has been publisehd on the Linxdemo server **https://demo.linx.twenty57.net/petstore**.  
+3. Open each request and pass parameters and body values as described in `https://petstore3.swagger.io/`
+
+**Some exceptions and limitations:**
 Aspects of the Open API 3 specification which are not supported by the RESTHost:
-
-Restore the postman collection 
-
+1. RequestBodies
+2. securitySchemes/oauth
 
 
 ## Contributing
