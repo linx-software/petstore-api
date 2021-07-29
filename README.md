@@ -15,7 +15,7 @@ For this sample, the api key **special-key** is used to test the authorization f
 **Some exceptions and limitations:**
 Aspects of the Open API 3 specification which are not supported by the RESTHost:
 1. RequestBodies
-2. securitySchemes/oauth
+2. SecuritySchemes and OAuth
 
 
 ## Contributing
