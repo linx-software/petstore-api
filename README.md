@@ -1,7 +1,7 @@
 #  Swagger PetStore - open API 3.0 Integration sample
 
 ## Description
-This sample implement 'Petstore' API according to the example 'Petstore' Swagger definition on https://editor.swagger.io/#.  We provide examples how to use the Linx RESTHost to call REST Web services.  The sample has been published on the demo server but it can also be run on a local machine or local server.  
+This sample implements 'Petstore' API according to the example 'Petstore' Swagger definition on https://editor.swagger.io/#.  We provide examples how to use the Linx RESTHost to call REST Web services.  The sample has been published on the demo server but it can also be run on a local machine or local server.  
 
 ## Installation
 For this sample, the api key **special-key** is used to test the authorization filters. 
