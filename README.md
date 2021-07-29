@@ -12,8 +12,7 @@ For this sample, the api key **special-key** is used to test the authorization f
 2. The sample has been publisehd on the Linxdemo server **https://demo.linx.twenty57.net/petstore**.  
 3. Open each request and pass parameters and body values as described in `https://petstore3.swagger.io/`
 
-**Some exceptions and limitations:**
-Aspects of the Open API 3 specification which are not supported by the RESTHost:
+**Aspects of the Open API 3 specification which are not supported by the RESTHost:**
 1. RequestBodies
 2. SecuritySchemes and OAuth
 
