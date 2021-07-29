@@ -1,7 +1,7 @@
-# PetStore integration
+#  Swagger PetStore - open API 3.0 Integration sample
 
 ## Description
-This sample implement 'Petstore' API according to the example 'Petstore' Swagger definition: https://editor.swagger.io/#.  We've not icluded the securitySchemes/oauth. 
+This sample implement 'Petstore' API according to the example 'Petstore' Swagger definition on https://editor.swagger.io/#.  We've not icluded the securitySchemes/oauth. 
 
 ## Installation
 For this sample, the api key **special-key** is used to test the authorization filters. 
