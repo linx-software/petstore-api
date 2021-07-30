@@ -5,6 +5,11 @@ This sample implements 'Petstore' API according to the example 'Petstore' Swagge
 
 ## Installation
 The below steps describe how to host this Solution on your own Linx cloud server environment.
+- Linx Designer - download it here
+
+Listed below are the usage steps involved in using the deployed service from 2 request platforms:
+
+
 
 - For this sample, the api key **special-key** is used to test the authorization filters. 
 - Register for a Linx trial server. You will receive an email containing your Linx cloud servera and drive space.
