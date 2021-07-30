@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d9dbcd90-5e74-4ff0-be22-fefe9f25490d",
+		"_postman_id": "16157bd9-7807-4f83-b4b4-64f54de998e1",
 		"name": "Swagger Petstore with Linx",
 		"description": "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -25,7 +25,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "Pet object that needs to be added to the store"
+							"raw": "{\r\n  \"id\": 30072022,\r\n  \"name\": \"Lassie\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Cats\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 5650,\r\n      \"name\": \"Lioness\"\r\n    }\r\n  ],\r\n  \"status\": \"sold\"\r\n}"
 						},
 						"url": {
 							"raw": "https://demo.api.linx.twenty57.net/petstore/pet",
@@ -61,7 +61,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "Pet object that needs to be added to the store"
+							"raw": "{\r\n  \"id\": 30072022,\r\n  \"name\": \"doggie\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Dogs\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}"
 						},
 						"url": {
 							"raw": "https://demo.api.linx.twenty57.net/petstore/pet",
@@ -92,7 +92,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/findByStatus?status={{status}}",
+							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/findByStatus?status=sold",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -109,7 +109,7 @@
 							"query": [
 								{
 									"key": "status",
-									"value": "{{status}}"
+									"value": "sold"
 								}
 							]
 						},
@@ -128,7 +128,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/findByTags?tags={{tags}}",
+							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/findByTags?tags=Lioness",
 							"protocol": "https",
 							"host": [
 								"demo",
@@ -145,7 +145,7 @@
 							"query": [
 								{
 									"key": "tags",
-									"value": "{{tags}}"
+									"value": "Lioness"
 								}
 							]
 						},
@@ -208,12 +208,12 @@
 							"urlencoded": [
 								{
 									"key": "name",
-									"value": "{{name}}",
+									"value": "Lion",
 									"type": "text"
 								},
 								{
 									"key": "status",
-									"value": "{{status}}",
+									"value": "available",
 									"type": "text"
 								}
 							]
@@ -236,7 +236,7 @@
 							"variable": [
 								{
 									"key": "petId",
-									"value": "{{petId}}"
+									"value": "30072021"
 								}
 							]
 						}
@@ -279,7 +279,7 @@
 							"variable": [
 								{
 									"key": "petId",
-									"value": "{{petId}}"
+									"value": "30072021"
 								}
 							]
 						}
@@ -305,12 +305,12 @@
 							"formdata": [
 								{
 									"key": "additionalMetadata",
-									"value": "{{additionalMetadata}}",
+									"value": "test-14",
 									"type": "text"
 								},
 								{
 									"key": "file",
-									"value": "{{file}}",
+									"value": "",
 									"type": "text"
 								}
 							]
@@ -334,7 +334,7 @@
 							"variable": [
 								{
 									"key": "petId",
-									"value": "{{petId}}"
+									"value": "30072022"
 								}
 							]
 						}
@@ -389,7 +389,12 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "order placed for purchasing the pet"
+							"raw": "{\r\n\t\"id\": 2577,\r\n\t\"petId\": 30072022,\r\n\t\"quantity\": 1,\r\n\t\"shipDate\": \"2021-07-22T06:35:41.582Z\",\r\n\t\"status\": \"placed\",\r\n\t\"complete\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "https://demo.api.linx.twenty57.net/petstore/store/order",
@@ -439,7 +444,7 @@
 							"variable": [
 								{
 									"key": "orderId",
-									"value": "{{orderId}}"
+									"value": "2577"
 								}
 							]
 						},
@@ -480,7 +485,7 @@
 							"variable": [
 								{
 									"key": "orderId",
-									"value": "{{orderId}}"
+									"value": "2577"
 								}
 							]
 						},
@@ -506,7 +511,12 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "Created user object"
+							"raw": "{\r\n  \"id\": 1001,\r\n  \"username\": \"theUser\",\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"James\",\r\n  \"email\": \"john@email.com\",\r\n  \"password\": \"12345\",\r\n  \"phone\": \"12345\",\r\n  \"userStatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "https://demo.api.linx.twenty57.net/petstore/user",
@@ -539,7 +549,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "List of user object"
+							"raw": "[\r\n    {\r\n        \"id\": \"0708\",\r\n        \"username\": \"Ronan\",\r\n        \"firstName\": \"Ronan\",\r\n        \"lastName\": \"mil\",\r\n        \"email\": \"mil@gmail.com\",\r\n        \"password\": \"12345\",\r\n        \"phone\": \"11000200\",\r\n        \"userStatus\": \"0\"\r\n    },\r\n    {\r\n        \"id\": \"10012\",\r\n        \"username\": \"testuser\",\r\n        \"firstName\": \"sum\",\r\n        \"lastName\": \"mil\",\r\n        \"email\": \"sum@gmail.com\",\r\n        \"password\": \"1234512345\",\r\n        \"phone\": \"11000200\",\r\n        \"userStatus\": \"0\"\r\n    }\r\n]"
 						},
 						"url": {
 							"raw": "https://demo.api.linx.twenty57.net/petstore/user/createWithList",
@@ -675,7 +685,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "Updated user object"
+							"raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"theUser\",\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"James\",\r\n  \"email\": \"john@email.com\",\r\n  \"password\": \"12345\",\r\n  \"phone\": \"12345\",\r\n  \"userStatus\": 1\r\n}"
 						},
 						"url": {
 							"raw": "https://demo.api.linx.twenty57.net/petstore/user/:username",
