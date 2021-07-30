@@ -14,6 +14,7 @@ For this sample, the api key **special-key** is used to test the authorization f
 3. Open each request and pass parameters and body values as described in `https://petstore3.swagger.io/`
 
 ***2. Test with Swagger documentation***
+
 The test can be done on https://demo.api.linx.twenty57.net/petstore/swagger
 
 ***Aspects of the Open API 3 specification which are not supported by the RESTHost:***
