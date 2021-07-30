@@ -20,7 +20,7 @@ The test can be done on https://demo.api.linx.twenty57.net/petstore/swagger
 1. RequestBodies
 2. SecuritySchemes and OAuth
 
-Resources
+***Resources***
 - [Api Documentation Generation with Linx](https://community.linx.software/community/t/api-documentation-generation/472)
 - [Deployment with Linx](https://community.linx.software/community/t/rest-web-services-deploying-and-common-issues/465)
 
