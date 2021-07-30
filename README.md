@@ -7,15 +7,22 @@ This sample implements 'Petstore' API according to the example 'Petstore' Swagge
 For this sample, the api key **special-key** is used to test the authorization filters. 
 
 ## Usage
-***Configure Postman collection:*** 
+***1. Test with Postman***
+****Configure Postman collection:****
 1. Open Postman and import the provided request collection in Postman.
 2. The sample has been publisehd on the Linxdemo server **https://demo.linx.twenty57.net/petstore**.  
 3. Open each request and pass parameters and body values as described in `https://petstore3.swagger.io/`
 
-**Aspects of the Open API 3 specification which are not supported by the RESTHost:**
+***2. Test with Swagger documentation***
+The test can be done on https://demo.api.linx.twenty57.net/petstore/swagger
+
+***Aspects of the Open API 3 specification which are not supported by the RESTHost:***
 1. RequestBodies
 2. SecuritySchemes and OAuth
 
+Resources
+[Api Documentation Generation with Linx](https://community.linx.software/community/t/api-documentation-generation/472)
+[Deployment with Linx](https://community.linx.software/community/t/rest-web-services-deploying-and-common-issues/465)
 
 ## Contributing
 
