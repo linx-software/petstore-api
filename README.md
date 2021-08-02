@@ -26,12 +26,15 @@ The attached postman collection is all set to send request the demo server.
 3. Open each request and pass or change parameters and body values as described in `https://petstore3.swagger.io/`
 
 ***3. Test on local machine or any other server apart from the demo server***
+
 The solution can be deployed on your local machine or any other server.  
 1. Change the following values in the settings:
     - `LinxApiBaseUri` : Base uri of host machine
     - `LinxApiPort` : port
     - `LinxIsLocalDevEnv` : true or false. 
     - `LinxServerHostname` : host name
+2. Deploying on local machine:
+
 
 
 ## Contributing
