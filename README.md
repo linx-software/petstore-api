@@ -33,9 +33,6 @@ The solution can be deployed on your local machine or any other server.
     - `LinxApiPort` : port
     - `LinxIsLocalDevEnv` : true or false. 
     - `LinxServerHostname` : host name
-2. Deploying on local machine:
-
-
 
 ## Contributing
 
