@@ -6,6 +6,7 @@ This sample implements 'Petstore' API according to the example 'Petstore' Swagge
 ## Installation
 The below steps describe how to host this Solution on your own Linx cloud server environment.
 - Linx Designer - download it [here](https://linx.software/)
+- Open the sample Solution (.lsoz) in your Linx Designer.
 
 Listed below are the usage steps involved in using the deployed service from 2 request platforms:
 - For this sample, the api key **special-key** is used to test the authorization filters. 
@@ -14,19 +15,24 @@ This solution runs on a Linx cloud server instance and integrates with swagger-p
 
 
 ## Usage
-***1. Test with Postman***
-****Configure Postman collection:****
-1. Open Postman and import the provided request collection in Postman.
-2. The sample has been publisehd on the Linxdemo server **https://demo.linx.twenty57.net/petstore**.  
-3. Open each request and pass parameters and body values as described in `https://petstore3.swagger.io/`
-
-***2. Test with Swagger documentation***
-
+***1. Test with Swagger documentation***
 The test can be done using the UI on  https://demo.api.linx.twenty57.net/petstore/swagger 
 
-***Aspects of the Open API 3 specification which are not supported by the RESTHost:***
-1. RequestBodies
-2. SecuritySchemes and OAuth
+***2. Test with Postman***
+****Configure Postman collection:****
+The attached postman collection is all set to send request the demo server.
+1. Open Postman and import the provided request collection in Postman.
+2. The sample has been publisehd on the Linxdemo server **https://demo.linx.twenty57.net/petstore**.  
+3. Open each request and pass or change parameters and body values as described in `https://petstore3.swagger.io/`
+
+***3. Test on local machine or any other server apart from the demo server***
+The solution can be deployed on your local machine or any other server.  
+1. Change the following values in the settings:
+    - `LinxApiBaseUri` : Base uri of host machine
+    - `LinxApiPort` : port
+    - `LinxIsLocalDevEnv` : true or false. 
+    - `LinxServerHostname` : host name
+
 
 ## Contributing
 
