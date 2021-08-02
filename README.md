@@ -1,7 +1,7 @@
 #  Swagger PetStore - open API 3.0 Integration sample
 
 ## Description
-This sample implements 'Petstore' API according to the example 'Petstore' Swagger definition on https://editor.swagger.io/#.  We provide examples how to use the Linx RESTHost to call REST Web services.  The sample has been publisehd on the Linx demo server, the Swagger documentation is available [here](https://demo.api.linx.twenty57.net/petstore/swagger).  
+This sample implements 'Petstore' API according to the example 'Petstore' Swagger definition on https://editor.swagger.io/#.  We provide examples how to use the Linx RESTHost to call swagger PETStore REST Web services.  The sample has been published on the [Linx demo server](https://demo.linx.twenty57.net/) , the Swagger documentation is available [here](https://demo.api.linx.twenty57.net/petstore/swagger).  
 
 ## Installation
 The below steps describe how to host this Solution on your own Linx cloud server environment.
