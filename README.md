@@ -8,9 +8,6 @@ The below steps describe how to host this Solution on your own Linx cloud server
 - Linx Designer - download it here
 
 Listed below are the usage steps involved in using the deployed service from 2 request platforms:
-
-
-
 - For this sample, the api key **special-key** is used to test the authorization filters. 
 - Register for a Linx trial server. You will receive an email containing your Linx cloud servera and drive space.
 This solution runs on a Linx cloud server instance and integrates with swagger-petstore.  The swagger-petstore is a java project to build a stand-alone server which implements the OpenAPI 3 Spec. You can find out more about both the spec and the framework at http://swagger.io.  
@@ -25,7 +22,7 @@ This solution runs on a Linx cloud server instance and integrates with swagger-p
 
 ***2. Test with Swagger documentation***
 
-The test can be done on https://demo.api.linx.twenty57.net/petstore/swagger
+The test can be done using the UI on  https://demo.api.linx.twenty57.net/petstore/swagger 
 
 ***Aspects of the Open API 3 specification which are not supported by the RESTHost:***
 1. RequestBodies
