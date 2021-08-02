@@ -28,14 +28,9 @@
 							"raw": "{\r\n  \"id\": 30072022,\r\n  \"name\": \"Lassie\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Cats\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 5650,\r\n      \"name\": \"Lioness\"\r\n    }\r\n  ],\r\n  \"status\": \"sold\"\r\n}"
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -64,14 +59,9 @@
 							"raw": "{\r\n  \"id\": 30072022,\r\n  \"name\": \"doggie\",\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Dogs\"\r\n  },\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}"
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -92,14 +82,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/findByStatus?status=sold",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/findByStatus?status=sold",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -128,14 +113,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/findByTags?tags=Lioness",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/findByTags?tags=Lioness",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -164,14 +144,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/:petId",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/:petId",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -219,14 +194,9 @@
 							]
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/:petId",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/:petId",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -262,14 +232,9 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/:petId",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/:petId",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -310,20 +275,15 @@
 								},
 								{
 									"key": "file",
-									"value": "",
-									"type": "text"
+									"type": "file",
+									"src": "image001.png"
 								}
 							]
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/pet/:petId/uploadImage",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/:petId/uploadImage",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -358,14 +318,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/store/inventory",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/store/inventory",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -397,14 +352,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/store/order",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/store/order",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -426,14 +376,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/store/order/:orderId",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/store/order/:orderId",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -467,14 +412,9 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/store/order/:orderId",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/store/order/:orderId",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -519,14 +459,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -552,14 +487,9 @@
 							"raw": "[\r\n    {\r\n        \"id\": \"0708\",\r\n        \"username\": \"Ronan\",\r\n        \"firstName\": \"Ronan\",\r\n        \"lastName\": \"mil\",\r\n        \"email\": \"mil@gmail.com\",\r\n        \"password\": \"12345\",\r\n        \"phone\": \"11000200\",\r\n        \"userStatus\": \"0\"\r\n    },\r\n    {\r\n        \"id\": \"10012\",\r\n        \"username\": \"testuser\",\r\n        \"firstName\": \"sum\",\r\n        \"lastName\": \"mil\",\r\n        \"email\": \"sum@gmail.com\",\r\n        \"password\": \"1234512345\",\r\n        \"phone\": \"11000200\",\r\n        \"userStatus\": \"0\"\r\n    }\r\n]"
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user/createWithList",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user/createWithList",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -581,14 +511,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user/login?username={{username}}&password={{password}}",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user/login?username={{username}}&password={{password}}",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -620,14 +545,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user/logout",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user/logout",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -649,14 +569,9 @@
 							}
 						],
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user/:username",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user/:username",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -685,17 +600,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"theUser\",\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"James\",\r\n  \"email\": \"john@email.com\",\r\n  \"password\": \"12345\",\r\n  \"phone\": \"12345\",\r\n  \"userStatus\": 1\r\n}"
+							"raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"theUser\",\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"James\",\r\n  \"email\": \"john@email.com\",\r\n  \"password\": \"12345\",\r\n  \"phone\": \"12345\",\r\n  \"userStatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user/:username",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user/:username",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
@@ -728,14 +643,9 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "https://demo.api.linx.twenty57.net/petstore/user/:username",
-							"protocol": "https",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/user/:username",
 							"host": [
-								"demo",
-								"api",
-								"linx",
-								"twenty57",
-								"net"
+								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
 							"path": [
 								"petstore",
