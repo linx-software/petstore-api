@@ -262,26 +262,17 @@
 							},
 							{
 								"key": "Content-Type",
-								"value": "multipart/form-data"
+								"value": "application/octet-stream"
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "additionalMetadata",
-									"value": "test-14",
-									"type": "text"
-								},
-								{
-									"key": "file",
-									"type": "file",
-									"src": "image001.png"
-								}
-							]
+							"mode": "file",
+							"file": {
+								"src": "image001.png"
+							}
 						},
 						"url": {
-							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/:petId/uploadImage",
+							"raw": "{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}/petstore/pet/:petId/uploadImage?additionalMetadata=dsds",
 							"host": [
 								"{{ApiBaseUri}}{{LinxDemoServerName}}{{LinxServerNameAddress}}"
 							],
@@ -291,10 +282,16 @@
 								":petId",
 								"uploadImage"
 							],
+							"query": [
+								{
+									"key": "additionalMetadata",
+									"value": "dsds"
+								}
+							],
 							"variable": [
 								{
 									"key": "petId",
-									"value": "30072022"
+									"value": "1"
 								}
 							]
 						}
