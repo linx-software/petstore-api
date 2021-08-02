@@ -16,7 +16,7 @@ This solution runs on a Linx cloud server instance and integrates with swagger-p
 
 ## Usage
 ***1. Test with Swagger documentation***
-The test can be done using the UI on  https://demo.api.linx.twenty57.net/petstore/swagger 
+[View live demo on Swagger](https://demo.api.linx.twenty57.net/petstore/swagger)
 
 ***2. Test with Postman***
 ****Configure Postman collection:****
