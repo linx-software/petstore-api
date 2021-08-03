@@ -1,11 +1,9 @@
 #  Swagger PetStore - open API 3.0 Integration sample
 
 ## Description
-This sample implements a REST API based on the Swagger 'Petstore' Open API definition , more details on the original 'Petstore' GitHub project can be found [here](https://github.com/swagger-api/swagger-petstore).
-
+This sample implements a Linx REST API based on the Swagger 'Petstore' Open API definition and hosted on a Linx Cloud Server, more details on the original 'Petstore' GitHub project can be found [here](https://github.com/swagger-api/swagger-petstore). The operations of the Linx API do not persist any data, but rather, request data is forwarded to actual 'Petstore' server via HTTP requests.  
 
 View the [live demo](https://demo.api.linx.twenty57.net/petstore/swagger) hosted on a Linx Cloud Server.
-
 
 
 ## Installation
