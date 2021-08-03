@@ -1,38 +1,54 @@
 #  Swagger PetStore - open API 3.0 Integration sample
 
 ## Description
-This sample implements 'Petstore' API according to the example 'Petstore' Swagger definition on https://editor.swagger.io/#. Petstore swagger is a sample server Petstore server. The swagger-petstore is a java project to build a stand-alone server which implements the OpenAPI 3 Spec. You can find out more about both the spec and the framework at http://swagger.io.  In this sample, we provide examples how to use the **Linx RESTHost** to call swagger PETStore REST Web services.  The sample has been published on the [Linx demo server](https://demo.linx.twenty57.net/), the Linx Swagger documentation is available [here](https://demo.api.linx.twenty57.net/petstore/swagger).  
+This sample implements a REST API based on the Swagger 'Petstore' Open API definition , more details on the original 'Petstore' GitHub project can be found [here](https://github.com/swagger-api/swagger-petstore).
+
+
+View the [live demo](https://demo.api.linx.twenty57.net/petstore/swagger) hosted on a Linx Cloud Server.
+
+
 
 ## Installation
-The below steps describe how to host this Solution on your own Linx cloud server environment.
-- Linx Designer - download it [here](https://linx.software/)
-- Open the sample Solution (.lsoz) in your Linx Designer.
 
-Listed below are the usage steps involved in using the deployed service from 2 request platforms:
-- For this sample, the api key **special-key** is used to test the authorization filters. 
-- Register for a Linx trial server. You will receive an email containing your Linx cloud server and a drive space.
-This solution runs on a Linx cloud server instance and integrates with swagger-petstore.  
+### Cloud server deployment
+This solution can be deployed directly to your Linx Cloud server instance.
 
+1. Register for a Linx trial cloud server [here](https://linx.software/server-buy2/).
+2. You will receive an email containing your Linx cloud server credentials when your trial server has been activated.
+1. Log into your cloud server instance and upload the Solution (Top Menu > Server > Upload).
+3. On the Solution's service dashboard page, __start__ all of the services for the Solution.   
+4. Once the service has started, you are able to make requests using the base URL of:
+   ```
+   https://{your instance name}.api.linx.twenty57.net/petstore
+   ```
+
+
+### Local environment
+The below steps describe how to setup the sample to run on your local Linx Designer environment.
+
+1. Download and install the Linx Designer [here](https://linx.software/server-buy2/).
+1. Open the sample Solution (.lsoz) in your Linx Designer.
+2. Alter the below Solution Settings:
+    - `LinxIsLocalDevEnv` : `False`
+3. Select the RESTHost service, right click and select __debug__. Once initialised, **start** the debugger.
+4. Once the debugger has started, you are able to make requests locally to:
+   ```
+   https://localhost:8080/petstore
+   ```
 
 ## Usage
-***1. Test with Swagger documentation***
-[View live demo on Swagger](https://demo.api.linx.twenty57.net/petstore/swagger).  You don't need the Linx designer to test this.  Just navigate to the link.
 
-***2. Test with Postman***
-****Configure Postman collection:****
-The attached postman collection is all set to send request the demo server.
-1. Open Postman and import the provided request collection in Postman.
-2. The sample has been publisehd on the Linxdemo server **https://demo.linx.twenty57.net/petstore**.  
+### Swagger UI
+[View live demo](https://demo.api.linx.twenty57.net/petstore/swagger).
+
+
+### Postman
+1. Open Postman and import the provided [request collection](https://github.com/linx-software/petstore-api/blob/main/tests/postman-collection/Swagger%20Petstore%20with%20Linx.postman_collection.json) in Postman.
+2. Alter the collection variables to reflect your cloud environment.
+ 
 3. Open each request and pass or change parameters and body values as described in `https://petstore3.swagger.io/`
 
-***3. Test on local machine or any other server apart from the demo server***
 
-The solution can be deployed on your local machine or any other server.  
-1. Change the following values in the settings:
-    - `LinxApiBaseUri` : Base uri of host machine
-    - `LinxApiPort` : port
-    - `LinxIsLocalDevEnv` : true or false. 
-    - `LinxServerHostname` : host name
 
 ## Contributing
 
