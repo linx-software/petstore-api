@@ -27,7 +27,7 @@ The below steps describe how to setup the sample to run on your local Linx Desig
 1. Download and install the Linx Designer [here](https://linx.software/server-buy2/).
 1. Open the sample Solution (.lsoz) in your Linx Designer.
 2. Alter the below Solution Settings:
-    - `LinxIsLocalDevEnv` : `False`
+    - `LinxIsLocalDevEnv` : `True`
 3. Select the RESTHost service, right click and select __debug__. Once initialised, **start** the debugger.
 4. Once the debugger has started, you are able to make requests locally to:
    ```
