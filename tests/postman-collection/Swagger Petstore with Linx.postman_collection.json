@@ -663,5 +663,39 @@
 			],
 			"description": "Folder for user"
 		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ApiBaseUri",
+			"value": "https://"
+		},
+		{
+			"key": "LinxDemoServerName",
+			"value": "demo"
+		},
+		{
+			"key": "LinxServerNameAddress",
+			"value": ".api.linx.twenty57.net"
+		}
 	]
 }
