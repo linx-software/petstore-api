@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "S82W",
+      "Properties": [
+        {
+          "Id": "ResponseHeaders",
+          "Name": "ResponseHeaders",
+          "Type": "List:Generated:q81a",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Custom:OvJp",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "StatusCode",
+          "Name": "StatusCode",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "q81a",
+      "Properties": [
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

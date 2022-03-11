@@ -1,0 +1,16 @@
+{
+  "Id": "rWS3",
+  "Name": "Pet_tags",
+  "Properties": [
+    {
+      "Id": "vZEg",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "xyVJ",
+      "Name": "name",
+      "Type": "Compiled:String"
+    }
+  ]
+}

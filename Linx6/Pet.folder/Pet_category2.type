@@ -1,0 +1,16 @@
+{
+  "Id": "4dRP",
+  "Name": "Pet_category2",
+  "Properties": [
+    {
+      "Id": "D9Vm",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "Twjh",
+      "Name": "name",
+      "Type": "Compiled:String"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "Id": "OvJp",
+  "Name": "Pet",
+  "Properties": [
+    {
+      "Id": "2kto",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "7GKr",
+      "Name": "name",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Ub6M",
+      "Name": "category",
+      "Type": "Custom:4dRP"
+    },
+    {
+      "Id": "dqsR",
+      "Name": "photoUrls",
+      "Type": "List:Compiled:String"
+    },
+    {
+      "Id": "Viuq",
+      "Name": "tags",
+      "Type": "List:Custom:rWS3"
+    },
+    {
+      "Id": "GSpi",
+      "Name": "status",
+      "Type": "Compiled:String"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "DZdv",
+    "Name": "api_key",
+    "Type": "Compiled:String",
+    "Value": "special-key"
+  },
+  {
+    "Id": "O2Da",
+    "Name": "LinxApiBaseUri",
+    "Type": "Compiled:String",
+    "Value": "http://+"
+  },
+  {
+    "Id": "LWlW",
+    "Name": "LinxApiPort",
+    "Type": "Compiled:String",
+    "Value": "8080"
+  },
+  {
+    "Id": "Tw2r",
+    "Name": "LinxIsLocalDevEnv",
+    "Type": "Compiled:Boolean",
+    "Value": "True"
+  },
+  {
+    "Id": "yfN2",
+    "Name": "SwaggerPetStoreBaseURI",
+    "Type": "Compiled:String",
+    "Value": "https://petstore3.swagger.io/api/v3/"
+  }
+]

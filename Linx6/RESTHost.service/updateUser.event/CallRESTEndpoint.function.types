@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "negh",
+      "Properties": [
+        {
+          "Id": "ResponseHeaders",
+          "Name": "ResponseHeaders",
+          "Type": "List:Generated:zW7U",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "ResponseBody",
+          "Name": "ResponseBody",
+          "Type": "Custom:PjBI",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "StatusCode",
+          "Name": "StatusCode",
+          "Type": "Compiled:Int32",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Generated",
+    "Value": {
+      "Id": "zW7U",
+      "Properties": [
+        {
+          "Id": "Name",
+          "Name": "Name",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        },
+        {
+          "Id": "Value",
+          "Name": "Value",
+          "Type": "Compiled:String",
+          "Access": "ReadWrite"
+        }
+      ]
+    }
+  }
+]

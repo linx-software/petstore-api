@@ -1,0 +1,30 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": null,
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "Test",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Standard.DoWhile.ConditionType, Twenty57.Linx.Plugins.Standard, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Before"
+    },
+    {
+      "Id": "Condition",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "TagsListCount>=1",
+        "CompiledExpression": "={0}>=1",
+        "Type": "Compiled:Boolean"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

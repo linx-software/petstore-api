@@ -1,0 +1,21 @@
+{
+  "Id": "2dY0",
+  "Name": "inventory",
+  "Properties": [
+    {
+      "Id": "1rMM",
+      "Name": "approved",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "zna6",
+      "Name": "placed",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "QU3k",
+      "Name": "delivered",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}

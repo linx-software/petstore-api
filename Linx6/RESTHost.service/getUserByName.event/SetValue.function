@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Target",
+      "Type": "Generated:scPI",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:scPI"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Source",
+      "Type": "Generated:scPI",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200"
+            ],
+            "expression": {
+              "Expression": "CallRESTEndpoint.ResponseBody",
+              "CompiledExpression": "={0}",
+              "Type": "Custom:PjBI"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ]
+}

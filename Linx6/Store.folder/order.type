@@ -1,0 +1,36 @@
+{
+  "Id": "ywoo",
+  "Name": "order",
+  "Properties": [
+    {
+      "Id": "ND9H",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "iand",
+      "Name": "petId",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "2cos",
+      "Name": "quantity",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "j4M5",
+      "Name": "shipDate",
+      "Type": "Compiled:DateTime"
+    },
+    {
+      "Id": "GgRc",
+      "Name": "status",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "cat3",
+      "Name": "complete",
+      "Type": "Compiled:Boolean"
+    }
+  ]
+}

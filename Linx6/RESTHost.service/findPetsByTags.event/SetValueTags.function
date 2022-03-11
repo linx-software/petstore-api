@@ -1,0 +1,26 @@
+{
+  "Properties": [
+    {
+      "Id": "Source",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "tags + \"&\" + $.Parameters.tags[TagsListCount -1]",
+        "CompiledExpression": "={2}+\"&\"+{1}[(int)({0}-1)]",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Target",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "tags",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

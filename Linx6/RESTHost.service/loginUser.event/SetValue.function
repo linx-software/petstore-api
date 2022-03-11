@@ -1,0 +1,36 @@
+{
+  "Properties": [
+    {
+      "Id": "Target",
+      "Type": "Generated:bHK0",
+      "ValueUsage": "RuntimeWrite",
+      "Value": {
+        "Expression": "$.Result",
+        "CompiledExpression": "={0}",
+        "Type": "Generated:bHK0"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Source",
+      "Type": "Generated:bHK0",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"Response200\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "Response200"
+            ],
+            "expression": {
+              "Expression": "CallRESTEndpoint.ResponseBody",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ]
+}

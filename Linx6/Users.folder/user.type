@@ -1,0 +1,46 @@
+{
+  "Id": "PjBI",
+  "Name": "user",
+  "Properties": [
+    {
+      "Id": "2LZI",
+      "Name": "id",
+      "Type": "Compiled:Int64"
+    },
+    {
+      "Id": "CY59",
+      "Name": "username",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "JQeY",
+      "Name": "firstName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "HeSx",
+      "Name": "lastName",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "EowO",
+      "Name": "email",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "WPFA",
+      "Name": "password",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "SQmJ",
+      "Name": "phone",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "euGB",
+      "Name": "userStatus",
+      "Type": "Compiled:Int64"
+    }
+  ]
+}
