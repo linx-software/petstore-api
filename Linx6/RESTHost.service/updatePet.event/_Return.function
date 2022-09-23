@@ -1,19 +1,8 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:UEOh",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:UEOh"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Source",
-      "Type": "Generated:UEOh",
+      "Id": "Value",
+      "Type": "Generated:aFsR",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"Response200\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -25,12 +14,16 @@
             "expression": {
               "Expression": "CallRESTEndpoint.ResponseBody",
               "CompiledExpression": "={0}",
-              "Type": "Custom:PjBI"
+              "Type": "Custom:OvJp"
             }
           }
         ]
       },
       "ValueType": "Linx.JsonExpression"
     }
-  ]
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
 }

@@ -1,19 +1,8 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:cpuc",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:cpuc"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Source",
-      "Type": "Generated:cpuc",
+      "Id": "Value",
+      "Type": "Generated:iKJ7",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"ResponseXXX\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -32,5 +21,9 @@
       },
       "ValueType": "Linx.JsonExpression"
     }
-  ]
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
 }

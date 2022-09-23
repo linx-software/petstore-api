@@ -1,18 +1,7 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:KyQi",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:KyQi"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Source",
+      "Id": "Value",
       "Type": "Generated:KyQi",
       "ValueUsage": "RuntimeRead",
       "Value": {
@@ -32,5 +21,9 @@
       },
       "ValueType": "Linx.JsonExpression"
     }
-  ]
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
 }

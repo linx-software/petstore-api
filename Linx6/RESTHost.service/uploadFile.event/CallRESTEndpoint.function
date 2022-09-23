@@ -1,34 +1,22 @@
 {
   "Properties": [
     {
-      "Id": "Multi-part encoded body",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.MultiPartItemCollection, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": [
-        {
-          "Name": "Test",
-          "Value": {
-            "Expression": "$.Parameters.body",
-            "CompiledExpression": "={0}",
-            "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-          },
-          "FileName": "Test.pnf",
-          "MimeType": "image/png"
-        }
-      ]
-    },
-    {
-      "Id": "Sign with certificate",
+      "Id": "Allow untrusted certificates",
       "Type": "Compiled:Boolean",
-      "ValueUsage": "DesignTime",
+      "ValueUsage": "RuntimeRead",
       "Value": false
     },
     {
-      "Id": "CollectionBodyFileName1",
-      "Type": "Compiled:Object",
-      "ValueUsage": "RuntimeRead",
-      "Value": "Test.pnf",
-      "ValueType": "String"
+      "Id": "Body format",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.BodyFormatType, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Stream"
+    },
+    {
+      "Id": "Bypass on local",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
     },
     {
       "Id": "Handle all status codes",
@@ -37,11 +25,11 @@
       "Value": false
     },
     {
-      "Id": "Port",
-      "Type": "Compiled:Int64",
+      "Id": "Headers",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
       "ValueUsage": "RuntimeRead",
-      "Value": 0,
-      "ValueType": "Int32"
+      "Value": "[{\"Name\":\"Accept\",\"Value\":\"application/json\"}]",
+      "ValueType": "String"
     },
     {
       "Id": "Max response content size",
@@ -51,22 +39,77 @@
       "ValueType": "Int32"
     },
     {
+      "Id": "Method",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.HttpMethod, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "POST"
+    },
+    {
+      "Id": "Output type",
+      "Type": "Compiled:Linx.ITypeReference",
+      "ValueUsage": "DesignTime",
+      "Value": "Compiled:String",
+      "ValueType": "Twenty57.Linx.SolutionDependencies.Types.CompiledTypeReference, Twenty57.Linx.SolutionDependencies.Types, Version=99.0.9.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Id": "Port",
+      "Type": "Compiled:Int64",
+      "ValueUsage": "RuntimeRead",
+      "Value": 0,
+      "ValueType": "Int32"
+    },
+    {
       "Id": "Proxy name",
       "Type": "Compiled:String",
       "ValueUsage": "RuntimeRead",
       "Value": ""
     },
     {
-      "Id": "Method",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.HttpMethod, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "POST"
+      "Id": "Query string",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "RuntimeRead",
+      "Value": null
     },
     {
-      "Id": "Bypass on local",
+      "Id": "Sign request",
       "Type": "Compiled:Boolean",
       "ValueUsage": "DesignTime",
       "Value": false
+    },
+    {
+      "Id": "Sign with certificate",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Stream contents",
+      "Type": "Compiled:System.Collections.Generic.IEnumerable`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Parameters.body",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Stream from file",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "RuntimeRead",
+      "Value": 100000
+    },
+    {
+      "Id": "Type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.AuthenticationType, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Anonymous"
     },
     {
       "Id": "URL",
@@ -78,67 +121,6 @@
         "Type": "Compiled:String"
       },
       "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "CollectionBodyValue1",
-      "Type": "Compiled:Object",
-      "ValueUsage": "RuntimeRead",
-      "Value": {
-        "Expression": "$.Parameters.body",
-        "CompiledExpression": "={0}",
-        "Type": "Compiled:System.Collections.Generic.List`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.AuthenticationType, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "Anonymous"
-    },
-    {
-      "Id": "Allow untrusted certificates",
-      "Type": "Compiled:Boolean",
-      "ValueUsage": "RuntimeRead",
-      "Value": false
-    },
-    {
-      "Id": "Output type",
-      "Type": "Compiled:Linx.ITypeReference",
-      "ValueUsage": "DesignTime",
-      "Value": "Compiled:String",
-      "ValueType": "Twenty57.Linx.SolutionDependencies.Types.CompiledTypeReference, Twenty57.Linx.SolutionDependencies.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "Id": "Timeout",
-      "Type": "Compiled:Int32",
-      "ValueUsage": "RuntimeRead",
-      "Value": 100000
-    },
-    {
-      "Id": "Headers",
-      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "RuntimeRead",
-      "Value": "[{\"Name\":\"Accept\",\"Value\":\"application/json\"},{\"Name\":\"Content-Type\",\"Value\":\"multipart/form-data\"}]",
-      "ValueType": "String"
-    },
-    {
-      "Id": "Sign request",
-      "Type": "Compiled:Boolean",
-      "ValueUsage": "DesignTime",
-      "Value": false
-    },
-    {
-      "Id": "Body format",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.BodyFormatType, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "MultiPartEncodedContent"
-    },
-    {
-      "Id": "Query string",
-      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "RuntimeRead",
-      "Value": null
     }
   ],
   "Result": "Generated:lIJv"

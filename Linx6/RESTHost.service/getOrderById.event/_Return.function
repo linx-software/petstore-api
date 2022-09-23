@@ -1,19 +1,8 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:scPI",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:scPI"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Source",
-      "Type": "Generated:scPI",
+      "Id": "Value",
+      "Type": "Generated:SbgO",
       "ValueUsage": "RuntimeRead",
       "Value": {
         "ParsedExpression": "{\"Response200\":{\"LinxExpression\":\"[PARSED]\"}}",
@@ -25,12 +14,16 @@
             "expression": {
               "Expression": "CallRESTEndpoint.ResponseBody",
               "CompiledExpression": "={0}",
-              "Type": "Custom:PjBI"
+              "Type": "Custom:ywoo"
             }
           }
         ]
       },
       "ValueType": "Linx.JsonExpression"
     }
-  ]
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
 }

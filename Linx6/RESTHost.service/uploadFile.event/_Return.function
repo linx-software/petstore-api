@@ -1,26 +1,16 @@
 {
   "Properties": [
     {
-      "Id": "Target",
-      "Type": "Generated:kSQ5",
-      "ValueUsage": "RuntimeWrite",
-      "Value": {
-        "Expression": "$.Result",
-        "CompiledExpression": "={0}",
-        "Type": "Generated:kSQ5"
-      },
-      "ValueType": "Linx.CSharpExpression"
-    },
-    {
-      "Id": "Source",
+      "Id": "Value",
       "Type": "Generated:kSQ5",
       "ValueUsage": "RuntimeRead",
       "Value": {
-        "ParsedExpression": "{\"Response200\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ParsedExpression": "{\"Response200\":{\"code\":2002, \"type\":\"Success\", \"message\":{\"LinxExpression\":\"[PARSED]\"}}}",
         "ExpressionPlaceholders": [
           {
             "typePath": [
-              "Response200"
+              "Response200",
+              "message"
             ],
             "expression": {
               "Expression": "CallRESTEndpoint.ResponseBody",
@@ -32,5 +22,9 @@
       },
       "ValueType": "Linx.JsonExpression"
     }
-  ]
+  ],
+  "RuntimeCharacteristics": {
+    "IsTerminating": true,
+    "ExecutionPathExecution": "ZeroOrMore"
+  }
 }

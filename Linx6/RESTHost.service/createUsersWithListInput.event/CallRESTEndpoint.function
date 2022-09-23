@@ -1,52 +1,10 @@
 {
   "Properties": [
     {
-      "Id": "Proxy name",
-      "Type": "Compiled:String",
-      "ValueUsage": "RuntimeRead",
-      "Value": ""
-    },
-    {
       "Id": "Allow untrusted certificates",
       "Type": "Compiled:Boolean",
       "ValueUsage": "RuntimeRead",
       "Value": false
-    },
-    {
-      "Id": "Sign request",
-      "Type": "Compiled:Boolean",
-      "ValueUsage": "DesignTime",
-      "Value": false
-    },
-    {
-      "Id": "Method",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.HttpMethod, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
-      "ValueUsage": "DesignTime",
-      "Value": "POST"
-    },
-    {
-      "Id": "Handle all status codes",
-      "Type": "Compiled:Boolean",
-      "ValueUsage": "DesignTime",
-      "Value": false
-    },
-    {
-      "Id": "Headers",
-      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "RuntimeRead",
-      "Value": "[{\"Name\":\"Accept\",\"Value\":\"application/json\"}]",
-      "ValueType": "String"
-    },
-    {
-      "Id": "URL",
-      "Type": "Compiled:String",
-      "ValueUsage": "RuntimeRead",
-      "Value": {
-        "Expression": "$.Settings.SwaggerPetStoreBaseURI+\"user/createWithList\"",
-        "CompiledExpression": "={0}+\"user/createWithList\"",
-        "Type": "Compiled:String"
-      },
-      "ValueType": "Linx.CSharpExpression"
     },
     {
       "Id": "Body",
@@ -60,22 +18,29 @@
       "ValueType": "Linx.CSharpExpression"
     },
     {
-      "Id": "Query string",
-      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-      "ValueUsage": "RuntimeRead",
-      "Value": null
+      "Id": "Body format",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.BodyFormatType, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "Json"
     },
     {
-      "Id": "Sign with certificate",
+      "Id": "Bypass on local",
       "Type": "Compiled:Boolean",
       "ValueUsage": "DesignTime",
       "Value": false
     },
     {
-      "Id": "Body format",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.BodyFormatType, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "Id": "Handle all status codes",
+      "Type": "Compiled:Boolean",
       "ValueUsage": "DesignTime",
-      "Value": "Json"
+      "Value": false
+    },
+    {
+      "Id": "Headers",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "RuntimeRead",
+      "Value": "[{\"Name\":\"Accept\",\"Value\":\"application/json\"}]",
+      "ValueType": "String"
     },
     {
       "Id": "Max response content size",
@@ -85,11 +50,17 @@
       "ValueType": "Int32"
     },
     {
+      "Id": "Method",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.HttpMethod, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "POST"
+    },
+    {
       "Id": "Output type",
       "Type": "Compiled:Linx.ITypeReference",
       "ValueUsage": "DesignTime",
       "Value": "Compiled:String",
-      "ValueType": "Twenty57.Linx.SolutionDependencies.Types.CompiledTypeReference, Twenty57.Linx.SolutionDependencies.Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+      "ValueType": "Twenty57.Linx.SolutionDependencies.Types.CompiledTypeReference, Twenty57.Linx.SolutionDependencies.Types, Version=99.0.9.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "Id": "Port",
@@ -99,22 +70,51 @@
       "ValueType": "Int32"
     },
     {
+      "Id": "Proxy name",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": ""
+    },
+    {
+      "Id": "Query string",
+      "Type": "Compiled:System.Collections.Generic.List`1[[Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.NameValuePair, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "RuntimeRead",
+      "Value": null
+    },
+    {
+      "Id": "Sign request",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
+      "Id": "Sign with certificate",
+      "Type": "Compiled:Boolean",
+      "ValueUsage": "DesignTime",
+      "Value": false
+    },
+    {
       "Id": "Timeout",
       "Type": "Compiled:Int32",
       "ValueUsage": "RuntimeRead",
       "Value": 100000
     },
     {
-      "Id": "Bypass on local",
-      "Type": "Compiled:Boolean",
-      "ValueUsage": "DesignTime",
-      "Value": false
-    },
-    {
       "Id": "Type",
-      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.AuthenticationType, Twenty57.Linx.Plugins.Rest, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Rest.CallRESTEndpoint.AuthenticationType, Twenty57.Linx.Plugins.Rest, Version=99.0.27.0, Culture=neutral, PublicKeyToken=null",
       "ValueUsage": "DesignTime",
       "Value": "Anonymous"
+    },
+    {
+      "Id": "URL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.SwaggerPetStoreBaseURI+\"user/createWithList\"",
+        "CompiledExpression": "={0}+\"user/createWithList\"",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
     }
   ],
   "Result": "Generated:HC7S"
