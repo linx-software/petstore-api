@@ -3,7 +3,7 @@
 ## Description
 This sample implements a Linx REST API based on the Swagger 'Petstore' OpenAPI definition and is hosted on a Linx Cloud Server, more details on the original 'Petstore' GitHub project can be found [here](https://github.com/swagger-api/swagger-petstore). The operations of the Linx API do not persist any data, but rather, request data is forwarded to actual 'Petstore' server via HTTP requests.  
 
-View the [live demo](https://demo.api.linx.twenty57.net/petstore/swagger) hosted on a Linx Cloud Server.
+View the [live demo](https://demolinx6.api.linx.twenty57.net/petstore/swagger) hosted on a Linx Cloud Server.
 
 
 ## Installation
@@ -37,7 +37,7 @@ The below steps describe how to setup the sample to run on your local Linx Desig
 ## Usage
 
 ### Swagger UI
-[View live demo](https://demo.api.linx.twenty57.net/petstore/swagger).
+[View live demo](	https://demolinx6.api.linx.twenty57.net/petstore/swagger).
 
 
 ### Postman
